@@ -1,0 +1,63 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border;
+}
+.container {
+width: 700px;
+height: 500px;
+border: 1px solid white;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box {
+width: 200px;
+height: 200px;
+border: 5px dotted black;
+background-color: dodgerblue;
+display: flex;
+justify-content: center;
+align-items: center;
+animation-name:box-animation;
+animation-duration: 4s;
+animation-delay: .5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+position: relative;
+animation-direction: alternate ;
+}
+@keyframes box-animation {
+0%{
+background-color: green;
+
+left: 0;
+top: 0;
+}
+25%{
+background-color:blueviolet;
+
+left: 300px;
+top:0;
+}
+50%{
+background-color:greenyellow;
+
+left: 300px;
+top: 300px;
+}
+75%{
+background-color:aqua;
+
+left:0;
+top: 300px;
+}
+100%{
+background-color: green;
+
+left: 0;
+top: 0;
+}
+
+}
